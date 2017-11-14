@@ -1,4 +1,4 @@
-<!-- <?php print_r($data);?> -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,13 +21,20 @@
         </div>
     </div>
     <div class="container">
+
+    <?php 
+    foreach ($data['postList'] as $post) {
+        ?>
         <div class="row">
             <div class="col content">
-                <h2><?= $data['page']['title']; ?></h2>
+                <h2><?= $post['title']; ?></h2>
                 <hr>
-				<?= $data['page']['body']; ?>
+                <?= $post['body']; ?>
             </div>
         </div>
+        <?php
+    } ?>
+
     </div>
 </div>
 <script src="/<?= CONFIG['site_path']; ?>/assets/js/script.js"></script>

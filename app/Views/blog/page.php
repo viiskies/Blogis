@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title><?= $data['page']['header'] . " | " . CONFIG['site_title']; ?></title>
+    <title><?= $data['post']['title'] . " | " . CONFIG['site_title']; ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/<?= CONFIG['site_path']; ?>/assets/css/bootstrap.min.css">
@@ -23,9 +23,9 @@
     <div class="container">
         <div class="row">
             <div class="col content">
-                <h2><?= $data['page']['title']; ?></h2>
+                <h2><?= $data['post']['title']; ?></h2>
                 <hr>
-				<?= $data['page']['body']; ?>
+				<?= $data['post']['body']; ?>
             </div>
         </div>
     </div>

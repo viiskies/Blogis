@@ -5,14 +5,14 @@ define("VERSION", 2017111216);
 define("CONFIG", [
 
     // Application
-    "site_path" => "uFrame",
-    "site_title" => "µFrame",
+    "site_path" => "blogis",
+    "site_title" => "blog'is",
 
     // Database
-    "use_database" => false,
+    "use_database" => true,
 
     "db_hostname" => "localhost",
     "db_username" => "root",
     "db_password" => "",
-    "db_name" => "uframe",
+    "db_name" => "blogis",
 ]);
