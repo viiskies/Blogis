@@ -33,3 +33,4 @@
 <script src="/<?= CONFIG['site_path']; ?>/assets/js/script.js"></script>
 </body>
 </html>
+

@@ -1,1 +1,0 @@
-console.log("µFrame JavaScript file was loaded successfully");

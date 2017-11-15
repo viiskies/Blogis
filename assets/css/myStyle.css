@@ -1,0 +1,7 @@
+.ad {
+	border-style: solid;
+	border-width: 2px 10px ;
+	background-color: rgba(255, 0, 0, 0.2);
+	padding: 10px;
+	text-align: center;
+}
