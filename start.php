@@ -3,6 +3,7 @@
 use uFrame\App;
 use uFrame\Log;
 use uFrame\Database;
+use uFrame\Menu;
 
 // We are going to log errors to log.txt file
 $log = new Log();

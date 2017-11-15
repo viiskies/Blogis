@@ -17,10 +17,14 @@ class Page extends Controller
         $pageModel = $this->model('PageModel');
         $data['page'] = $pageModel->getPage($page_name);
 
+        $adsModel = $this->model("AdsModel");
+        $data['ads'] = $adsModel->get3banners();
+
+        $data['body'] = "Be nice - say Hi!";
+        $data['header'] = "Hello World";
+
         $this->view("page", $data);
 
-        // $data['header'] = "Hello World";
-        // $data['body'] = "Be nice - say Hi!";
     }
 
 }

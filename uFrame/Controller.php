@@ -8,6 +8,7 @@
 
 namespace uFrame;
 
+use uFrame\Menu;
 class Controller
 {
     protected $db;

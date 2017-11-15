@@ -1,5 +1,5 @@
 <?php 
-print_r($data);
+// print_r($data);
 ?>
 
 <!DOCTYPE HTML>
@@ -39,7 +39,7 @@ print_r($data);
 
 					</div>
 					<!-- <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-					<p><?= $post['excerpt']; ?></p>
+					<p><?= $post['body'] . "..."; ?></p>
 				</article>
 				<?php
 			} ?>
@@ -55,20 +55,18 @@ print_r($data);
 		<!-- Logo -->
 		<h1 id="logo"><a href="/<?= CONFIG['site_path']; ?>"><?= CONFIG['site_title']; ?></a></h1>
 
+
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li class="current"><a href="/<?= CONFIG['site_path']; ?>/blog">Blog</a></li>
-				<li><a href="#">Archives</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Contact Me</a></li>
+				<?php uframe\Menu::show(); ?>
 			</ul>
 		</nav>
 
 		<!-- Search -->
 		<section class="box search">
-			<form method="post" action="#">
-				<input type="text" class="text" name="search" placeholder="Search" />
+			<form method="get" action="/<?= CONFIG['site_path']; ?>/blog/search/">
+				<input type="text" class="text" name="query" placeholder="Search" />
 			</form>
 		</section>
 

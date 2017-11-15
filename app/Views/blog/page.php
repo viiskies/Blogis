@@ -50,10 +50,7 @@
         <!-- Nav -->
         <nav id="nav">
             <ul>
-            <li class=""><a href="/<?= CONFIG['site_path']; ?>/blog">Blog</a></li>
-                <li><a href="#">Archives</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <?php uframe\Menu::show(); ?>
             </ul>
         </nav>
 
